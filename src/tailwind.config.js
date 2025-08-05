@@ -1,0 +1,12 @@
+@tailwind base;
+
+@layer base{
+    :root{
+    --nav-bg: #1b1b1b;
+    --button-color: #e68815;
+    --box-bg-color: #f6ce9e;
+    --text-color-1: #f7f7f7;
+    --text-color-2: #dddddd;
+}
+
+}
