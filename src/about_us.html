@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kodex Afrika</title>
+
+  <link href="./output.css" rel="stylesheet">
+  <link rel="shortcut icon" href="/images/logo64.png" type="image/x-icon">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+
+
+</head>
+
+<body class="m-0 p-0 box-border font-[sans-serif] ">
+  <nav
+    class="fixed right-0 left-0 top-0 z-50 text-[0.8rem] flex flex-row justify-between  max-w-screen p-8  bg-[var(--nav-bg)] text-[var(--text-color-1)]  ">
+    <div>
+      <a href="index.html"><img class="w-[10rem] h-[2rem]" src="/images/kodexafricaLogo.png.png"
+          alt="kodex africa Logo"></a>
+    </div>
+    <div class="hidden  lg:flex flex-row items-center gap-5 ">
+      <div>
+        <ul class="flex flex-row gap-7 ">
+          <a href="index.html">
+            <li class="hover:border-b-1 hover:border-b-amber-600">Home</li>
+          </a>
+          <a href="about_us.html">
+            <li class="hover:border-b-1 hover:border-b-amber-600">About us</li>
+          </a>
+          <div>
+            <el-dropdown class="inline-block">
+              <li><button class="hover:border-b-1 hover:border-b-amber-600 cursor-pointer">Our Subsidiary<span><i
+                      class="ri-arrow-drop-down-line"></i></span></button></li>
+              <el-menu anchor="bottom end" popover
+                class="w-40 py-1 pl-10 text-[var(--text-color-1)] bg-[var(--nav-bg)] [--anchor-gap:--spacing(2)] divide-gray-500 ">
+                <div><a href="#subsidiary">Kodex Africa</a></div>
+                <div><a href="#subsidiary">Kodex Build</a></div>
+                <div><a href="#subsidiary">The Space</a></div>
+              </el-menu>
+            </el-dropdown>
+          </div>
+          <a href="contact_us.html">
+            <li class="hover:border-b-1 hover:border-b-amber-600">Contact us</li>
+          </a>
+         <a href="contact_us.html"> <button
+            class="px-[30px] py-[6px] rounded-[5px] bg-amber-600  transition duration-500 ease-in hover:bg-[#131111] cursor-pointer">Get
+            In Touch</button></a>
+        </ul>
+      </div>
+      <div>
+        <a href="login.html">
+        <button
+          class="px-[20px] py-[6px] rounded-[5px] bg-amber-600 border-amber-100 border-2 transition duration-500 ease-in hover:bg-[#131111] cursor-pointer">Login</button></a>
+        <a href="signup.html">
+          <button
+          class="px-[20px] py-[6px] rounded-[5px] bg-amber-600 border-amber-100 border-2 transition duration-500 ease-in hover:bg-[#131111] cursor-pointer">sign
+          Up</button></a>
+      </div>
+    </div>
+    <div class="block lg:hidden ">
+      <el-dropdown>
+        <button class="text-4xl hover:cursor-pointer"><i class="ri-menu-line"></i></button>
+        <el-menu anchor="bottom end"
+          class="w-screen h-full py-1 pl-10 text-[var(--text-color-1)] bg-[var(--nav-bg)] [--anchor-gap:--spacing(2)] ">
+          <div class="py-3"><a href="index.html" class="hover:border-b-1 hover:border-b-amber-600">Home</a></div>
+          <div class=""><a href="about_us.html" class="hover:border-b-1 hover:border-b-amber-600">About Us</a></div>
+          <div class="block py-3">
+            <el-dropdown>
+              <button class=" hover:border-b-1 hover:border-b-amber-600 cursor-pointer">Our Subsidiary<span><i
+                    class="ri-arrow-drop-down-line"></i></span></button>
+              <el-menu anchor="bottom end"
+                class=" w-fit h-fit py-1 text-[var(--text-color-1)] bg-[var(--nav-bg)] [--anchor-gap:--spacing(2)] ">
+                <div class="py-3"><a href="#subsidiary" class="hover:border-b-1 hover:border-b-amber-600">Kodex Africa</a></div>
+                <div class="py-3"><a href="#subsidiary" class="hover:border-b-1 hover:border-b-amber-600">Kodex Build</a></div>
+                <div class="py-3"><a href="#subsidiary" class="hover:border-b-1 hover:border-b-amber-600">The Space</a></div>
+              </el-menu>
+            </el-dropdown>
+          </div>
+          <div class="py-3"><a href="contact_us.html" class="hover:border-b-1 hover:border-b-amber-600">Contact Us</a></div>
+
+          <div class="py-3"><a href="contact_us.html"><button
+              class="px-[30px] py-[6px] rounded-[5px] bg-amber-600  transition duration-500 ease-in hover:bg-[#131111] cursor-pointer">Get
+              In Touch</button></a></div>
+          <div>
+            <a href="login.html">
+            <button
+              class="px-[20px] py-[6px] rounded-[5px] bg-amber-600 border-amber-100 border-2 transition duration-500 ease-in hover:bg-[#131111] cursor-pointer">Login</button></a>
+            
+            <a href="signup.html">  <button
+              class="px-[20px] py-[6px] rounded-[5px] bg-amber-600 border-amber-100 border-2 transition duration-500 ease-in hover:bg-[#131111] cursor-pointer">sign
+              Up</button></a>
+          </div>
+          <div class="flex mt-10 text-4xl gap-3 text-[var(--text-color-1)] items-center ">
+            <a href="" class="hover:text-amber-600  transition duration-500 ease-in"><i
+                class="ri-facebook-circle-line"></i></a>
+            <a href="" class="hover:text-amber-600  transition duration-500 ease-in"><i class="ri-twitter-line"></i></a>
+            <a href="" class="hover:text-amber-600  transition duration-500 ease-in"><i
+                class="ri-linkedin-box-line"></i></a>
+            <a href="" class="hover:text-amber-600  transition duration-500 ease-in"><i
+                class="ri-instagram-line"></i></a>
+            <a href="" class="hover:text-amber-600  transition duration-500 ease-in"><i class="ri-tiktok-line"></i></a>
+            <a href="" class="hover:text-amber-600  transition duration-500 ease-in"><i class="ri-youtube-line"></i></a>
+          </div>
+        </el-menu>
+      </el-dropdown>
+    </div>
+  </nav>
+
+    <section class="w-full flex md:flex-row mb-24">
+                <div class="md:w-1/4 z-10 ">
+            <img src="/images/fourth_slide.jpeg.jpeg" alt="">
+        </div>
+        <div class="z-0 pt-40 pl-8 pr-20 pb-8 bg-[url(/images/cardpattern.png.png)] bg-[var(--nav-bg)] text-[var(--text-color-2)] h-full rounded-br-[6rem]">
+            <h3>About Us</h3>
+            <h1>Who We Are</h1>
+            <p>
+
+                Kodex Africa is more than an organization; we are a catalyst for change, a beacon of hope, and a driving
+                force
+                behind the technological transformation of Africa. Our identity is rooted in our unwavering commitment
+                to
+                empowering Africa's brightest minds, fostering innovation, and creating opportunities for growth and
+                development. We are a passionate community of educators, technologists, mentors, and visionaries who
+                believe in
+                the potential of Africa's youth. We aim to unlock that potential by providing access to quality
+                mentorship, and
+                resources in the tech sector. Kodex Africa is more than an organization; we are a movement, a collective
+                force
+                that believes in the limitless possibilities of Africa's tech talent. Together, we are shaping the
+                future of
+                technology on the continent and empowering Africa's brightest minds to lead the way.</p>
+
+        </div>
+
+    </section>
+    <hr>
+
+    <section class="block px-16 my-20">
+        <h1 class="flex justify-center mb-10 text-2xl font-semibold"
+            style="background: linear-gradient(to right,  #000000, #d67b0b, #000000); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+            The KODEX Journey</h1>
+
+        <p class="mb-5">Formerly known as Kodex limited, established in 2021. our inception marked the dawn of a new era
+            in
+            the world of education and innovation. What began as a humble academy has evolved into a multifaceted
+            organization that transcends boundaries and fosters growth.
+            Our journey began with a vision that has since blossomed into a thriving entity. We embarked on this journey
+            with the belief that knowledge is the key to progress. As we evolved, we kept our core values intact while
+            expanding our horizons. Today, Kodex Africa stands as a testament to our commitment to empowering
+            individuals
+            and organizations with the tools they need to excel.</p>
+
+        <video class="w-full h-50 rounded-2xl border-[1px]" controls
+            poster="/images/Youtube-icon-design-on-transparent-background-PNG.webp"
+            src="https://www.youtube.com/embed/SYEcQDE7aEk?si=Fau6AD78X-6xDRRs"></video>
+
+
+    </section>
+
+    <section class="block px-[64px] mb-20">
+
+        <div class="grid md:grid-cols-3 lg:grid-cols-[auto_1fr_1fr_1fr] gap-[2rem] w-full h-auto mt-8 ">
+
+            <div class="px-10  lg:px-0 md:col-span-3 lg:col-span-1 lg:h-full lg:flex lg:justify-center  ">
+                <h1 class="w-full bg-[var(--button-color)] text-center  text-amber-50 font-bold py-5 lg:py-26 rounded-tl-2xl rounded-br-2xl lg:h-full" style="box-shadow: 0px 4px 10px black;">
+                    OUR VALUES <span class="hidden sm:hidden md:hidden lg:block lg:px-5"><img class="lg:self-center" src="https://kodexafrica.com/new/img/Arrow.png" alt="Arrow"></span></h1>
+            
+            </div>
+
+            <div
+                class=" bg-[var(--nav-bg)] w-full h-auto p-8 flex flex-col items-center text-center rounded-[10px] hover:cursor-pointer ">
+                <div class="w-15 h-15 text-[27px] bg-[var(--text-color-2)] rounded-full flex "><span
+                        class="flex m-auto"><i class="ph ph-users-three"></i></span></div>
+                <h2 class="mt-10 text-[16px] text-[var(--text-color-1)] font-bold">Teamwork</h2>
+                <p class="text-[16px] text-[var(--text-color-1)] mt-2">We believe in the power of collaboration and working together to achieve common goals.
+                </p>
+            </div>
+
+            <div
+                class="bg-[url(/images/cardpattern.png.png)] bg-[var(--nav-bg)] w-[100%] h-auto p-8 flex flex-col items-center text-center rounded-[10px] hover:cursor-pointer ">
+                <div class="w-15 h-15 text-[27px] bg-[var(--text-color-2)] rounded-full flex hover:bg-amber-500"><span
+                        class="flex m-auto"><i class="ph ph-shield-star"></i></span></div>
+                <h2 class="mt-10 text-[16px] text-[var(--text-color-1)] font-bold">Excellence/Quality</h2>
+                <p class="text-[16px] text-[var(--text-color-1)] mt-2">We are committed to delivering exceptional quality in all our services and products.</p>
+            </div>
+
+            <div
+                class="bg-[url(/images/cardpattern.png.png)] bg-[var(--nav-bg)] w-[100%] h-auto p-8 flex flex-col items-center text-center rounded-[10px] hover:cursor-pointer ">
+                <div class="w-15 h-15 text-[27px] bg-[var(--text-color-2)] rounded-full flex hover:bg-amber-500"><span
+                        class="flex m-auto"><i class="ph ph-path"></i></span></div>
+                <h2 class="mt-10 text-[16px] text-[var(--text-color-1)] font-bold">Flexibility</h2>
+                <p class="text-[16px] text-[var(--text-color-1)] mt-2">We adapt and evolve to meet the changing needs of our clients and the dynamic tech industry
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <hr>
+
+  <section class="block px-8 lg:px-16 my-20">
+
+        <h1 class="flex justify-center text-2xl uppercase font-semibold mb-12"
+      style="background: linear-gradient(to right,  #E68815, #854d08, #000000); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+      Our Subsidiaries</h1>
+
+    <div class="grid md:grid-cols-3 gap-[2rem] w-[100%] h-auto  ">
+
+      <div class=" bg-[#fae6cd] w-[100%] h-auto p-8 flex flex-col items-center rounded-[10px] justify-between">
+        <h2 class=" text-[16px] font-bold">Kodex Academy</h2>
+        <p class="text-[14.4px] text-[#585757] text-center  mt-4 mb-4">Kodex Academy Provides an Extensive selection of
+          courses covering
+          full-stack web development, mobile app development, UI/UX design, and data analysis.
+        </p>
+        <button
+          class="bg-[#E68815] text-[#f7f7f7] px-8 py-[10px] rounded-[7px]  transition duration-500 ease-in hover:bg-[#131111] cursor-pointer">Learn
+          More</button>
+      </div>
+
+      <div class=" bg-[#fae6cd] w-[100%] h-auto p-8 flex flex-col items-center rounded-[10px] justify-between">
+        <h2 class=" text-[16px] font-bold">Kodex Build</h2>
+        <p class="text-[14.4px] text-[#585757]  text-center  mt-4 mb-4">Kodex Build operates as a complete development
+          studio, delivering
+          cutting-edge product development services to both corporate clients and individuals.
+        </p>
+        <button
+          class="bg-[#E68815] text-[#f7f7f7] px-8 py-[10px] rounded-[7px]  transition duration-500 ease-in hover:bg-[#131111] cursor-pointer">Learn
+          More</button>
+      </div>
+
+      <div class=" bg-[#fae6cd] w-[100%] h-auto p-8 flex flex-col items-center rounded-[10px] justify-between">
+        <h2 class=" text-[16px] font-bold">The Space NG</h2>
+        <p class="text-[14.4px] text-[#585757]  text-center  mt-4 mb-4">The Space NG aims at establishing an environment
+          and community that
+          fosters collaboration, connecting entrepreneurs, professionals, and creatives while offering growth
+          opportunities.
+        </p>
+        <button
+          class="bg-[#E68815] text-[#f7f7f7] px-8 py-[10px] rounded-[7px]  transition duration-500 ease-in hover:bg-[#131111] cursor-pointer">Learn
+          More</button>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="w-full px-6 flex flex-col-reverse md:flex-row mb-10">
+    <div class="bg-[var(--nav-bg)] p-8 text-[#dddddd] rounded-2xl md:w-1/2">
+            <h1 class="flex  text- font-semibold"
+      style="background: linear-gradient(to right,  #f59a2b, #fff9f2, #fffefe); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+      Our Mission</h1>
+        <p>At Kodex Africa, our mission is clear: to bridge the gap between knowledge and application. We are dedicated to equipping our community with the skills, insights, and resources required to succeed in an ever-changing world. Whether you're a student, a professional, or an organization seeking transformation, we are here to guide you on your path to excellence.</p>
+    </div>
+    <div class=" p-8 text-[var(--text-color-3)] md:w-1/2 ">
+            <h1 class="flex  text- font-semibold"
+      style="background: linear-gradient(to right,  #d1780b, #000000, #000000); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+      Our Vision</h1>
+        <p>At Kodex Africa, our vision is to be a beacon of knowledge and innovation, lighting the way for individuals and organizations in Africa and beyond. We aspire to create a future where access to quality education and cutting-edge solutions knows no bounds. Through our unwavering commitment to excellence, we aim to empower every individual to reach their full potential, foster economic growth, and drive positive change in society. Together, we envision a world where knowledge is the catalyst for a brighter, more prosperous tomorrow.</p>
+    </div>
+  </section>
+
+  <section class="px-20 mb-10 flex flex-col md:flex-row items-center gap-8">
+        <h1 class="flex text-[32px] font-semibold"
+      style="background: linear-gradient(to right,  #E68815, #854d08, #000000); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+      Our Partner</h1>
+      <img class="hidden md:flex" src="https://kodexafrica.com/new/img/Arrow.png" alt="Arrow">
+      <div class="w-50">
+        <a href=""><img class="" src="https://kodexafrica.com/new/img/fi-lagos.jpg" alt=""></a>
+      </div>
+
+  </section>
+
+  <section class="px-16 py-16">
+        <h1 class="flex justify-center uppercase text-[32px] font-semibold"
+      style="background: linear-gradient(to right,  #E68815, #854d08, #000000); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+      Meet the Team</h1>
+      <p class="mb-8">Behind Kodex Africa's success is a team of passionate individuals who are dedicated to making a positive impact. Our educators, mentors, and experts bring a wealth of knowledge and experience to the table, ensuring that you receive the highest quality guidance, support and services.</p>
+      <div class="border-4 border-black ">
+        <img src="/images/Third_slide.png.png" alt="">
+
+      </div>
+    
+
+  </section>
+
+  
+
+    <footer class="bg-[var(--nav-bg)] overflow-x-hidden  md:max-w-screen ">
+    <section class="block px-10 py-20">
+      <a href="index.html"><img src="/images/kodexafricaLogo.png.png" alt="Kodex-logo"></a>
+
+      <div class="flex flex-col gap-7 md:flex-row md:gap-10 text-sm">
+        <div class="block w-fit sm:w-70  md:w-[320px] ">
+          <p class="text-[var(--text-color-1)] justify-center  p-0 m-0">At Kodex Africa, we are developing a pipeline of
+            African tech talents
+            equipped with the skills, support, and network that they need to solve African problems.</p>
+        </div>
+
+        <div class="flex flex-col gap-7 md:flex-row md:w-[60%] md:justify-between ">
+          <div class="w-[140px]">
+            <h2 class="text-white font-bold mb-5">Quick Links</h2>
+            <ul>
+              <a href="index.html">
+                <li class="text-[var(--text-color-1)] mb-2 w-fit hover:border-b-amber-500 hover:border-b-[1px]">Home
+                </li>
+              </a>
+              <a href="about_us.html">
+                <li class="text-[var(--text-color-1)] mb-2 w-fit hover:border-b-amber-500 hover:border-b-[1px]">About us
+                </li>
+              </a>
+              <a href="contact_us.html">
+                <li class="text-[var(--text-color-1)] mb-2 w-fit hover:border-b-amber-500 hover:border-b-[1px]">Contact
+                  us</li>
+              </a>
+              <a href="login.html">
+                <li class="text-[var(--text-color-1)] mb-2 w-fit hover:border-b-amber-500 hover:border-b-[1px]">Login
+                </li>
+              </a>
+              <a href="">
+                <li class="text-[var(--text-color-1)] mb-2 w-fit hover:border-b-amber-500 hover:border-b-[1px]">Terms &
+                  conditions</li>
+              </a>
+              <a href="">
+                <li class="text-[var(--text-color-1)] mb-2 w-fit hover:border-b-amber-500 hover:border-b-[1px]">Policies
+                </li>
+              </a>
+
+            </ul>
+          </div>
+
+          <div class="w-[120px]">
+            <h2 class="text-white mb-5 font-bold">Explore</h2>
+            <ul>
+              <a href="#subsidiary">
+                <li class="text-[var(--text-color-1)] mb-2 w-fit hover:border-b-amber-500 hover:border-b-[1px]">Kodex
+                  Academy</li>
+              </a>
+              <a href="#subsidiary">
+                <li class="text-[var(--text-color-1)] mb-2 w-fit hover:border-b-amber-500 hover:border-b-[1px]">Kodex
+                  Build</li>
+              </a>
+              <a href="#subsidiary">
+                <li class="text-[var(--text-color-1)] mb-2 w-fit hover:border-b-amber-500 hover:border-b-[1px]">The
+                  SpaceNg</li>
+              </a>
+              <a href="">
+                <li class="text-[var(--text-color-1)] mb-2 w-fit hover:border-b-amber-500 hover:border-b-[1px]">Career
+                </li>
+              </a>
+
+            </ul>
+          </div>
+
+          <div class="flex flex-col w-[250px]">
+            <h1 class="text-white mb-5 font-bold">Contact</h1>
+            <p class="text-[var(--text-color-1)]">Plot No. A/127 Iyiagu Housing Estate, Awka, Anambra State.</p>
+            <a href="" class="text-[var(--text-color-1)]">(+234)9031452508</a>
+            <a href="" class="text-[var(--text-color-1)]">support@kodexafrica.com</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <hr class="h-0.5 bg-amber-50">
+    <section class="px-20 py-7 justify-center md:justify-between flex flex-col-reverse gap-6 items-center md:flex-row ">
+
+      <div>
+        <p class="text-[#E68815] text-sm font-[0.75rem]">© 2025 Kodex Africa. All Rights Reserved.</p>
+      </div>
+      <div class="flex text-md gap-5 text-[var(--text-color-1)]  ">
+        <a href="" class="hover:text-amber-600  transition duration-500 ease-in"><i
+            class="ri-facebook-circle-line"></i></a>
+        <a href="" class="hover:text-amber-600  transition duration-500 ease-in"><i class="ri-twitter-line"></i></a>
+        <a href="" class="hover:text-amber-600  transition duration-500 ease-in"><i
+            class="ri-linkedin-box-line"></i></a>
+        <a href="" class="hover:text-amber-600  transition duration-500 ease-in"><i class="ri-instagram-line"></i></a>
+        <a href="" class="hover:text-amber-600  transition duration-500 ease-in"><i class="ri-tiktok-line"></i></a>
+        <a href="" class="hover:text-amber-600  transition duration-500 ease-in"><i class="ri-youtube-line"></i></a>
+      </div>
+    </section>
+        <section
+      class="z-40 self-end right-12  bottom-8 h-12 w-12 rounded-full bg-amber-600 text-white text-xl font-extrabold flex justify-center items-center fixed cursor-pointer">
+      <a class=" " href=""><i class="ph ph-arrow-up"></i></a>
+    </section>
+
+    </footer>
+
+</body>
+
+</html>

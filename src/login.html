@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kodex Afrika</title>
+
+  <link href="./output.css" rel="stylesheet">
+  <link rel="shortcut icon" href="/images/logo64.png" type="image/x-icon">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+
+
+</head>
+
+<body class="m-0 p-0 box-border font-[sans-serif] ">
+  <nav
+    class="fixed right-0 left-0 top-0 z-50 text-[0.8rem] flex flex-row justify-between  max-w-screen p-8  bg-[var(--nav-bg)] text-[var(--text-color-1)]  ">
+    <div>
+      <a href="index.html"><img class="w-[10rem] h-[2rem]" src="/images/kodexafricaLogo.png.png"
+          alt="kodex africa Logo"></a>
+    </div>
+    <div class="hidden  lg:flex flex-row items-center gap-5 ">
+      <div>
+        <ul class="flex flex-row gap-7 ">
+          <a href="index.html">
+            <li class="hover:border-b-1 hover:border-b-amber-600">Home</li>
+          </a>
+          <a href="about_us.html">
+            <li class="hover:border-b-1 hover:border-b-amber-600">About us</li>
+          </a>
+          <div>
+            <el-dropdown class="inline-block">
+              <li><button class="hover:border-b-1 hover:border-b-amber-600 cursor-pointer">Our Subsidiary<span><i
+                      class="ri-arrow-drop-down-line"></i></span></button></li>
+              <el-menu anchor="bottom end" popover
+                class="w-40 py-1 pl-10 text-[var(--text-color-1)] bg-[var(--nav-bg)] [--anchor-gap:--spacing(2)] divide-gray-500 ">
+                <div><a href="#subsidiary">Kodex Africa</a></div>
+                <div><a href="#subsidiary">Kodex Build</a></div>
+                <div><a href="#subsidiary">The Space</a></div>
+              </el-menu>
+            </el-dropdown>
+          </div>
+          <a href="contact_us.html">
+            <li class="hover:border-b-1 hover:border-b-amber-600">Contact us</li>
+          </a>
+         <a href="contact_us.html"> <button
+            class="px-[30px] py-[6px] rounded-[5px] bg-amber-600  transition duration-500 ease-in hover:bg-[#131111] cursor-pointer">Get
+            In Touch</button></a>
+        </ul>
+      </div>
+      <div>
+        <a href="login.html">
+        <button
+          class="px-[20px] py-[6px] rounded-[5px] bg-amber-600 border-amber-100 border-2 transition duration-500 ease-in hover:bg-[#131111] cursor-pointer">Login</button></a>
+        <a href="signup.html">
+          <button
+          class="px-[20px] py-[6px] rounded-[5px] bg-amber-600 border-amber-100 border-2 transition duration-500 ease-in hover:bg-[#131111] cursor-pointer">sign
+          Up</button></a>
+      </div>
+    </div>
+    <div class="block lg:hidden ">
+      <el-dropdown>
+        <button class="text-4xl hover:cursor-pointer"><i class="ri-menu-line"></i></button>
+        <el-menu anchor="bottom end"
+          class="w-screen h-full py-1 pl-10 text-[var(--text-color-1)] bg-[var(--nav-bg)] [--anchor-gap:--spacing(2)] ">
+          <div class="py-3"><a href="index.html" class="hover:border-b-1 hover:border-b-amber-600">Home</a></div>
+          <div class=""><a href="about_us.html" class="hover:border-b-1 hover:border-b-amber-600">About Us</a></div>
+          <div class="block py-3">
+            <el-dropdown>
+              <button class=" hover:border-b-1 hover:border-b-amber-600 cursor-pointer">Our Subsidiary<span><i
+                    class="ri-arrow-drop-down-line"></i></span></button>
+              <el-menu anchor="bottom end"
+                class=" w-fit h-fit py-1 text-[var(--text-color-1)] bg-[var(--nav-bg)] [--anchor-gap:--spacing(2)] ">
+                <div class="py-3"><a href="#subsidiary" class="hover:border-b-1 hover:border-b-amber-600">Kodex Africa</a></div>
+                <div class="py-3"><a href="#subsidiary" class="hover:border-b-1 hover:border-b-amber-600">Kodex Build</a></div>
+                <div class="py-3"><a href="#subsidiary" class="hover:border-b-1 hover:border-b-amber-600">The Space</a></div>
+              </el-menu>
+            </el-dropdown>
+          </div>
+          <div class="py-3"><a href="contact_us.html" class="hover:border-b-1 hover:border-b-amber-600">Contact Us</a></div>
+
+          <div class="py-3"><a href="contact_us.html"><button
+              class="px-[30px] py-[6px] rounded-[5px] bg-amber-600  transition duration-500 ease-in hover:bg-[#131111] cursor-pointer">Get
+              In Touch</button></a></div>
+          <div>
+            <a href="login.html">
+            <button
+              class="px-[20px] py-[6px] rounded-[5px] bg-amber-600 border-amber-100 border-2 transition duration-500 ease-in hover:bg-[#131111] cursor-pointer">Login</button></a>
+            
+            <a href="signup.html">  <button
+              class="px-[20px] py-[6px] rounded-[5px] bg-amber-600 border-amber-100 border-2 transition duration-500 ease-in hover:bg-[#131111] cursor-pointer">sign
+              Up</button></a>
+          </div>
+          <div class="flex mt-10 text-4xl gap-3 text-[var(--text-color-1)] items-center ">
+            <a href="" class="hover:text-amber-600  transition duration-500 ease-in"><i
+                class="ri-facebook-circle-line"></i></a>
+            <a href="" class="hover:text-amber-600  transition duration-500 ease-in"><i class="ri-twitter-line"></i></a>
+            <a href="" class="hover:text-amber-600  transition duration-500 ease-in"><i
+                class="ri-linkedin-box-line"></i></a>
+            <a href="" class="hover:text-amber-600  transition duration-500 ease-in"><i
+                class="ri-instagram-line"></i></a>
+            <a href="" class="hover:text-amber-600  transition duration-500 ease-in"><i class="ri-tiktok-line"></i></a>
+            <a href="" class="hover:text-amber-600  transition duration-500 ease-in"><i class="ri-youtube-line"></i></a>
+          </div>
+        </el-menu>
+      </el-dropdown>
+    </div>
+  </nav>
+
+    <section class=" bg-[#fae6cd] md:bg-white pt-40 md:pt-0 px-4  pb-24  flex flex-col gap-5 w-full justify-center items-center">
+
+        <div class="text-[var(s--text-color-3)] px-10 md:pt-39 w-full md:w-1/2 md:p-8 bg-[#fae6cd] md:rounded-2xl" >
+            <h1 class="font-semibold text-xl text-[var(--nav-bg)] md:text-center">Welcome Back</h1>
+            <h5 class="text-md mb-4 md:text-center">Login in to your account </h5>
+            <form class="flex flex-col gap-3 text-sm md:grid md:grid-cols-1 " action="">
+                <div class="flex flex-col">
+                    <label for="Name">Email</label>
+                    <input class="bg-[#f9f1e8]  py-2 px-4 border-[1px] rounded-md" type="email" placeholder="Enter your email">
+                </div>
+                <div class="flex flex-col">
+                    <label for="Email">Password</label>
+                    <input class="bg-[#f9f1e8]  py-2 px-4 border-[1px] rounded-md" type="password" placeholder="Enter your password">
+                </div>
+
+                <div class="md:self-end">
+                    <button class="bg-[#1b1b1b] text-[var(--text-color-2)] text-[0.95rem] px-10 py-3 rounded transition duration-500 ease-in-out hover:bg-[var(--button-color)]">Login</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <footer class="bg-[var(--nav-bg)] overflow-x-hidden  md:max-w-screen ">
+    <section class="block px-10 py-20">
+      <a href="index.html"><img src="/images/kodexafricaLogo.png.png" alt="Kodex-logo"></a>
+
+      <div class="flex flex-col gap-7 md:flex-row md:gap-10 text-sm">
+        <div class="block w-fit sm:w-70  md:w-[320px] ">
+          <p class="text-[var(--text-color-1)] justify-center  p-0 m-0">At Kodex Africa, we are developing a pipeline of
+            African tech talents
+            equipped with the skills, support, and network that they need to solve African problems.</p>
+        </div>
+
+        <div class="flex flex-col gap-7 md:flex-row md:w-[60%] md:justify-between ">
+          <div class="w-[140px]">
+            <h2 class="text-white font-bold mb-5">Quick Links</h2>
+            <ul>
+              <a href="index.html">
+                <li class="text-[var(--text-color-1)] mb-2 w-fit hover:border-b-amber-500 hover:border-b-[1px]">Home
+                </li>
+              </a>
+              <a href="about_us.html">
+                <li class="text-[var(--text-color-1)] mb-2 w-fit hover:border-b-amber-500 hover:border-b-[1px]">About us
+                </li>
+              </a>
+              <a href="contact_us.html">
+                <li class="text-[var(--text-color-1)] mb-2 w-fit hover:border-b-amber-500 hover:border-b-[1px]">Contact
+                  us</li>
+              </a>
+              <a href="login.html">
+                <li class="text-[var(--text-color-1)] mb-2 w-fit hover:border-b-amber-500 hover:border-b-[1px]">Login
+                </li>
+              </a>
+              <a href="">
+                <li class="text-[var(--text-color-1)] mb-2 w-fit hover:border-b-amber-500 hover:border-b-[1px]">Terms &
+                  conditions</li>
+              </a>
+              <a href="">
+                <li class="text-[var(--text-color-1)] mb-2 w-fit hover:border-b-amber-500 hover:border-b-[1px]">Policies
+                </li>
+              </a>
+
+            </ul>
+          </div>
+
+          <div class="w-[120px]">
+            <h2 class="text-white mb-5 font-bold">Explore</h2>
+            <ul>
+              <a href="#subsidiary">
+                <li class="text-[var(--text-color-1)] mb-2 w-fit hover:border-b-amber-500 hover:border-b-[1px]">Kodex
+                  Academy</li>
+              </a>
+              <a href="#subsidiary">
+                <li class="text-[var(--text-color-1)] mb-2 w-fit hover:border-b-amber-500 hover:border-b-[1px]">Kodex
+                  Build</li>
+              </a>
+              <a href="#subsidiary">
+                <li class="text-[var(--text-color-1)] mb-2 w-fit hover:border-b-amber-500 hover:border-b-[1px]">The
+                  SpaceNg</li>
+              </a>
+              <a href="">
+                <li class="text-[var(--text-color-1)] mb-2 w-fit hover:border-b-amber-500 hover:border-b-[1px]">Career
+                </li>
+              </a>
+
+            </ul>
+          </div>
+
+          <div class="flex flex-col w-[250px]">
+            <h1 class="text-white mb-5 font-bold">Contact</h1>
+            <p class="text-[var(--text-color-1)]">Plot No. A/127 Iyiagu Housing Estate, Awka, Anambra State.</p>
+            <a href="" class="text-[var(--text-color-1)]">(+234)9031452508</a>
+            <a href="" class="text-[var(--text-color-1)]">support@kodexafrica.com</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <hr class="h-0.5 bg-amber-50">
+    <section class="px-20 py-7 justify-center md:justify-between flex flex-col-reverse gap-6 items-center md:flex-row ">
+
+      <div>
+        <p class="text-[#E68815] text-sm font-[0.75rem]">© 2025 Kodex Africa. All Rights Reserved.</p>
+      </div>
+      <div class="flex text-md gap-5 text-[var(--text-color-1)]  ">
+        <a href="" class="hover:text-amber-600  transition duration-500 ease-in"><i
+            class="ri-facebook-circle-line"></i></a>
+        <a href="" class="hover:text-amber-600  transition duration-500 ease-in"><i class="ri-twitter-line"></i></a>
+        <a href="" class="hover:text-amber-600  transition duration-500 ease-in"><i
+            class="ri-linkedin-box-line"></i></a>
+        <a href="" class="hover:text-amber-600  transition duration-500 ease-in"><i class="ri-instagram-line"></i></a>
+        <a href="" class="hover:text-amber-600  transition duration-500 ease-in"><i class="ri-tiktok-line"></i></a>
+        <a href="" class="hover:text-amber-600  transition duration-500 ease-in"><i class="ri-youtube-line"></i></a>
+      </div>
+    </section>
+
+  </footer>
+
+</body>
+
+</html>

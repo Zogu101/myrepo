@@ -7,6 +7,8 @@
     --box-bg-color: #f6ce9e;
     --text-color-1: #f7f7f7;
     --text-color-2: #dddddd;
+    --text-color-3: #585757;
+
 }
 
 }
